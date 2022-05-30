@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run tsc -- --noEmit && jest",
+    "test": "npm run tsc -- --noEmit && jest --detectOpenHandles",
     "tsc": "tsc"
   },
   "keywords": [],
@@ -22,6 +22,10 @@
   },
   "dependencies": {
     "@types/uuid": "^8.3.4",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^6.20.0",
+    "sequelize-typescript": "^2.1.3",
+    "sqlite3": "^5.0.8",
     "uuid": "^8.3.2"
   }
 }
